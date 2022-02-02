@@ -68,16 +68,20 @@ function game(){
     }
     if(playerScore>computerScore){
         alert("You have won the match!");
+        console.log("You have won the match!")
     }
     else if(playerScore<computerScore){
         alert("You have lost the match.");
+        console.log("You have lost the match.")
     }
     else{
         alert("The match has ended in a tie.")
+        console.log("The match has ended in a tie.")
     }
 }
 
 //Exceute game at start
+alert("Press ctrl+shift+J to see game status in console");
 game()
 
 
