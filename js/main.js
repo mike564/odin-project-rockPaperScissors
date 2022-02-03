@@ -48,6 +48,7 @@ function playRound(playerSelection,computerSelection){
 
 //Execute the game, calling playRound() five times. Result of each round is returned by playRound() into "result" and adds to player's respective score. Player with highest score wins.
 function game(){
+    console.clear();
     let round = 1;
     let playerScore = 0;
     let computerScore = 0;
@@ -67,16 +68,19 @@ function game(){
         console.log("Your Score: " + playerScore +" Computer's Score: " + computerScore)
     }
     if(playerScore>computerScore){
-        alert("You have won the match!");
         console.log("You have won the match!")
+        alert("You have won the match!");
+        
     }
     else if(playerScore<computerScore){
-        alert("You have lost the match.");
         console.log("You have lost the match.")
+        alert("You have lost the match.");
+        
     }
     else{
-        alert("The match has ended in a tie.")
         console.log("The match has ended in a tie.")
+        alert("The match has ended in a tie.")
+        
     }
 }
 
