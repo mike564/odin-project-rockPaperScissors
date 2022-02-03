@@ -80,8 +80,7 @@ function game(){
     }
 }
 
-//Exceute game at start
-alert("Press ctrl+shift+J to see game status in console");
-game()
+
+
 
 
