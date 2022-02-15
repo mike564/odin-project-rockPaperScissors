@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header{
+    display: flex;
+}
+
+h1,h2{
+    margin:0;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family:fantasy, sans-serif;
+    text-align: start;
+}
+
+span{
+    margin-left: 50px;
+    font-size: .7rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+body{
+    background-color: rgba(255, 248, 157, 0.678);
+    text-align: center;
+    margin:0;
+    padding: 0 10%;
+}
+
+.message-sec{
+    border: 2px solid rgba(0, 0, 0, 0.274);
+    margin-top:5px;
+    background-color:azure;
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+
+.message-box{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.match-info{
+    display:flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.score-div h2{
+    width: 20vw;
+    font-size: 1.5rem;
+}
+
+.round-div{
+    flex-grow:1;
+    
+}
+
+.name-cont{
+    background-color: chartreuse;
+    border: 3px solid black;
+    border-radius: 0 0 5px 5px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px 3px black;
+}
+
+.score-cont{
+    height: 50%;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 12px 1px black inset;
+}
+
+.round-cont{
+    background-color: rgba(172, 255, 47, 0.596);
+    border: 3px solid black;
+    height: 100%;
+    max-height: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px 1px black inset;
+    overflow: hidden;
+}
+
+.player{
+    background: blue;
+    
+}
+
+.opponent{
+    background: red;
+}
+
+/***************************/
+
+/***************************/
+
+.table{
+   display: flex;
+   justify-content: center;
+   height: 230px;
+   align-items: flex-end;
+   margin: 10px 0; 
+}
+
+.table div{
+    align-self: center;
+    font-weight:bold;
+}
+
+.disp-cont{
+    height: 150px;
+    width:150px;
+    min-width: 150px;
+    margin:0 1vw;  
+}
+
+.disp-cont h2{
+    border: 5px solid black;
+    background: rgba(211, 211, 211, 0.541);
+   }
+   
+.disp-cont img{
+    height: 82%;
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: .3vw .3vw .8vw .1vw black inset;
+}
+
+.up{
+    /* position: relative;
+    top:-5vw; */
+    align-self: flex-start;
+}
+
+
+/***************************/
+
+/***************************/
+.start-btn{
+    display: block;
+    margin:40px auto 0;
+    height: 45px;
+    width: 90px;
+    min-width: 90px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: red;
+    box-shadow: 1px 1px 1px 2px black;
+    padding: 0;
+}
+
+.rps-btn-cont{
+    height: auto;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rps-btn{
+    height: 110px;
+    width: 110px;
+    min-width: 110px;
+    padding: 0 1%;
+    margin: 20px 2vw;
+    background-color: blueviolet;
+    box-shadow: .15vw .15vw .2vw .3vw black;
+    border-radius: 5%;   
+}
+
+.rps-btn div{
+    font-size: 1.2rem;
+    text-shadow: .1vw .1vw .6vw white;
+    font-weight: bold;
+}
+
+.rps-btn img{
+    height: 70%;
+    width: 100%;
+}
+
+
+
+.dim{
+    opacity: 50%;
+}
+
+.citation{
+    display: block;
+}
+
+@media screen and (max-width:640px)
+{
+
+    html{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .match-info{
+        height: 120px;
+    }
+
+    .round-cont{
+        padding: 0 2px;
+    }
+
+    body{
+        padding:0;
+    }
+    
+    .score-cont{
+        padding-top: 2vw;
+    }
+
+    .round-cont{
+        padding-top: 2vw;
+    }
+
+} 
+
+@media screen and (max-width:300px){
+
+    html{
+        font-size: 8px;
+    }
+
+    .rps-btn,.disp-cont{
+        height: 80px;
+        width: 80px;
+        min-width: 40px;
+    }
+
+} 
+
+@media screen and (max-height:620px){
+    .table{
+        height: 150px;
+        transform: scale(.6);
+        margin:0;
+    }
+    
+    .start-btn{
+        margin-top: 0;
+    }
+
+} 

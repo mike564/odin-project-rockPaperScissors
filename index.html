@@ -5,11 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <p>Press ctrl+shift+j to see game in console</p>
-    <button onclick="game()">Press to play!</button>
+    <header>
+        <h1>LET'S PLAY ROCK PAPER SCISSORS!</h1><span>By Michael Nguyen</span>
+    </header>
+    <section class="message-sec">
+        <div class="message-box">Click the start button to begin</div>
+    </section>
+
+
+    <section class="match-info">
+        <div class="score-div">
+            <div class="name-cont">
+                <h2>Your
+                    <br>Score
+                </h2>
+            </div>
+            <div class="score-cont player"></div>
+        </div>
+
+        <div class="round-div"><h2 class="name-cont">Round</h2><div class="round-cont"></div></div>
+
+        <div class="score-div">
+            <div class="name-cont">
+                <h2>Computer
+                    <br>Score
+                </h2>
+            </div>
+            <div class="score-cont opponent"></div>
+        </div>
+    </section>
+
+
+    <section class="table">
+        <section class="disp-cont up">
+            <h2>Computer</h2>
+            <img class="computer-disp" src="./images/computer.png" alt="computer's hand">
+        </section>
+        <div>VS</div>
+        <section class="disp-cont">
+            <h2>YOU</h2>
+            <img class="user-disp" src="./images/blank_user.png" alt="user hand">
+        </section>
+    </section>
+
+
+    <button class="start-btn">START</button>
+
+
+    <section class="rps-btn-cont">
+        <button class="rps-btn Rock" disabled="true"><div>ROCK</div><img src="./images/rock.png" alt="rock"></button>
+        <button class="rps-btn Paper" disabled="true"><div>PAPER</div><img src="./images/paper.png" alt="paper"></button>
+        <button class="rps-btn Scissors" disabled="true"><div>SCISSORS</div><img src="./images/scissors.png" alt="scissors"></button>
+    </section>
+
+
+
+
+    <a class="citation" href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Freepik - Flaticon</a>
+    <a class="citation" href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a>
+    <a class="citation" href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Freepik - Flaticon</a>
+    <a class="citation" href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>
